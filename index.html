@@ -29,7 +29,7 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-<link rel="stylesheet" href="css/style.css?v=3">
+<link rel="stylesheet" href="css/style.css?v=5">
 
 <!-- ===== 구조화 데이터: 네이버/구글이 '지역 업체'로 인식 ===== -->
 <script type="application/ld+json">
@@ -75,7 +75,7 @@
       <li><a href="lesson.html">레슨 안내</a></li>
       <li><a href="pricing.html">이용 요금</a></li>
       <li><a href="facility.html">시설</a></li>
-      <li><a href="location.html">오시는 길</a></li>
+      <li><a href="location.html">오시는 길</a></li> <li><a href="index.html#contact">상담신청</a></li>
       <li><a href="tel:01077581862" class="nav-cta">010-7758-1862</a></li>
     </ul>
   </nav>
@@ -85,7 +85,16 @@
 <section class="hero">
   <div class="wrap hero-inner">
     <div class="hero-text">
-      <span class="eyebrow"><i data-lucide="circle-dot" class="ic-inline"></i> 미아역 도보 3분 · 강북 당구장 & 당구 레슨</span>
+      <span class="eyebrow"><svg class="eyebrow-balls" width="46" height="16" viewBox="0 0 46 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="eb-y" cx="35%" cy="30%" r="75%"><stop offset="0%" stop-color="#ffe9ad"/><stop offset="55%" stop-color="#eab54e"/><stop offset="100%" stop-color="#a9791f"/></radialGradient>
+          <radialGradient id="eb-w" cx="35%" cy="30%" r="75%"><stop offset="0%" stop-color="#ffffff"/><stop offset="60%" stop-color="#e6ebe8"/><stop offset="100%" stop-color="#a9b3ad"/></radialGradient>
+          <radialGradient id="eb-r" cx="35%" cy="30%" r="75%"><stop offset="0%" stop-color="#ff8375"/><stop offset="50%" stop-color="#e23b2e"/><stop offset="100%" stop-color="#8f1a12"/></radialGradient>
+        </defs>
+        <circle cx="7" cy="8" r="6.5" fill="url(#eb-y)"/>
+        <circle cx="22" cy="8" r="6.5" fill="url(#eb-w)"/>
+        <circle cx="37" cy="8" r="6.5" fill="url(#eb-r)"/>
+      </svg> 미아역 도보 3분 · 강북 당구장 & 당구 레슨</span>
       <h1>오늘부터 <span class="accent">제대로</span><br>배우는 당구 레슨</h1>
       <p class="lead">공을 아무리 쳐도 안 늘던 이유, 자세와 시스템에 있습니다. 시비시디스 대대 8대를 갖춘 쾌적한 공간에서 3구를 1:1 맞춤으로 잡아드립니다. 초보 입문부터 고점 원포인트까지.</p>
       <div class="hero-actions">
@@ -100,36 +109,53 @@
       </div>
     </div>
     <div class="hero-art" aria-hidden="true">
-      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 440 400" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <radialGradient id="felt" cx="50%" cy="42%" r="65%">
-            <stop offset="0%" stop-color="#2b62d8"/>
-            <stop offset="100%" stop-color="#123a9c"/>
+          <linearGradient id="felt" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#2f6ae0"/><stop offset="55%" stop-color="#1f52c6"/><stop offset="100%" stop-color="#123a9c"/>
+          </linearGradient>
+          <radialGradient id="spot" cx="42%" cy="26%" r="60%">
+            <stop offset="0%" stop-color="#6a95ff" stop-opacity=".55"/><stop offset="70%" stop-color="#1f52c6" stop-opacity="0"/>
           </radialGradient>
-          <radialGradient id="rball" cx="35%" cy="30%" r="75%">
-            <stop offset="0%" stop-color="#ff7a6b"/><stop offset="45%" stop-color="#e23b2e"/><stop offset="100%" stop-color="#8f1a12"/>
+          <radialGradient id="vig" cx="50%" cy="46%" r="62%">
+            <stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#04143f" stop-opacity=".8"/>
           </radialGradient>
-          <radialGradient id="yball" cx="35%" cy="30%" r="75%">
-            <stop offset="0%" stop-color="#ffe6a8"/><stop offset="45%" stop-color="#e6b862"/><stop offset="100%" stop-color="#9c6f22"/>
-          </radialGradient>
-          <radialGradient id="wball" cx="35%" cy="30%" r="75%">
-            <stop offset="0%" stop-color="#ffffff"/><stop offset="55%" stop-color="#e9efe9"/><stop offset="100%" stop-color="#b3bdb4"/>
-          </radialGradient>
-          <filter id="sh" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/></filter>
+          <linearGradient id="wood" x1="24" y1="392" x2="150" y2="250" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#3f2a12"/><stop offset="45%" stop-color="#a26f34"/><stop offset="70%" stop-color="#d8ab63"/><stop offset="100%" stop-color="#7c5326"/>
+          </linearGradient>
+          <radialGradient id="rball" cx="34%" cy="28%" r="78%"><stop offset="0%" stop-color="#ff8f80"/><stop offset="42%" stop-color="#e5372a"/><stop offset="100%" stop-color="#7f150e"/></radialGradient>
+          <radialGradient id="yball" cx="34%" cy="28%" r="78%"><stop offset="0%" stop-color="#ffeeb8"/><stop offset="42%" stop-color="#ecb84f"/><stop offset="100%" stop-color="#946716"/></radialGradient>
+          <radialGradient id="wball" cx="34%" cy="28%" r="78%"><stop offset="0%" stop-color="#ffffff"/><stop offset="55%" stop-color="#eaefec"/><stop offset="100%" stop-color="#9aa49d"/></radialGradient>
         </defs>
-        <circle cx="200" cy="205" r="170" fill="url(#felt)" stroke="#0e2c72" stroke-width="10"/>
-        <circle cx="200" cy="205" r="170" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
-        <g filter="url(#sh)">
-          <circle cx="170" cy="150" r="30" fill="url(#yball)"/>
-          <circle cx="235" cy="160" r="30" fill="url(#rball)"/>
-          <circle cx="205" cy="215" r="30" fill="url(#yball)"/>
-          <circle cx="150" cy="235" r="30" fill="url(#rball)"/>
-          <circle cx="255" cy="248" r="30" fill="url(#wball)"/>
-          <circle cx="190" cy="285" r="30" fill="url(#rball)"/>
+
+        <!-- 라사지 테이블 -->
+        <rect x="8" y="18" width="424" height="364" rx="28" fill="url(#felt)"/>
+        <rect x="8" y="18" width="424" height="364" rx="28" fill="url(#spot)"/>
+        <rect x="8" y="18" width="424" height="364" rx="28" fill="url(#vig)"/>
+        <rect x="8" y="18" width="424" height="364" rx="28" fill="none" stroke="#0e2c72" stroke-width="7"/>
+
+        <!-- 접촉 그림자 -->
+        <ellipse cx="152" cy="290" rx="30" ry="10" fill="#0a2160" opacity=".55"/>
+        <ellipse cx="262" cy="196" rx="30" ry="10" fill="#0a2160" opacity=".55"/>
+        <ellipse cx="312" cy="286" rx="30" ry="10" fill="#0a2160" opacity=".55"/>
+
+        <!-- 큐대 -->
+        <g>
+          <line x1="20" y1="394" x2="150" y2="252" stroke="url(#wood)" stroke-width="12" stroke-linecap="round"/>
+          <line x1="138" y1="265" x2="150" y2="252" stroke="#f4f1e8" stroke-width="12" stroke-linecap="round"/>
+          <circle cx="150" cy="252" r="5.5" fill="#2a63e6"/>
         </g>
-        <ellipse cx="176" cy="141" rx="9" ry="6" fill="#fff" opacity=".55"/>
-        <ellipse cx="241" cy="151" rx="9" ry="6" fill="#fff" opacity=".4"/>
-        <ellipse cx="261" cy="239" rx="9" ry="6" fill="#fff" opacity=".7"/>
+
+        <!-- 공: 흰(수구)·노랑·빨강 -->
+        <circle cx="255" cy="165" r="26" fill="url(#yball)"/>
+        <ellipse cx="246" cy="154" rx="8" ry="5.5" fill="#fff" opacity=".65"/>
+        <circle cx="312" cy="255" r="26" fill="url(#rball)"/>
+        <ellipse cx="303" cy="244" rx="8" ry="5.5" fill="#fff" opacity=".5"/>
+        <circle cx="168" cy="258" r="26" fill="url(#wball)"/>
+        <ellipse cx="159" cy="247" rx="8" ry="5.5" fill="#fff" opacity=".85"/>
+
+        <!-- 진행 라인 -->
+        <path d="M190 250 Q225 205 250 180" stroke="#fff" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round" fill="none" opacity=".45"/>
       </svg>
     </div>
   </div>
@@ -173,7 +199,7 @@
     </div>
     <div class="grid grid-3">
       <div class="card"><div class="ico"><i data-lucide="sprout"></i></div><h3>초보 입문반</h3><p>큐 잡는 법부터. 당구가 처음이어도 괜찮습니다.</p></div>
-      <div class="card"><div class="ico ico-num">3</div><h3>3구(스리쿠션)</h3><p>기본 시스템, 뒤돌리기·앞돌리기·옆돌리기 라인 완성.</p></div>
+      <div class="card"><div class="ico ico-num">3</div><h3>3구(쓰리쿠션)</h3><p>기본 시스템, 뒤돌리기·앞돌리기·옆돌리기 라인 완성.</p></div>
       <div class="card"><div class="ico"><i data-lucide="target"></i></div><h3>원포인트 <span style="color:var(--mint);font-size:13px;">무료</span></h3><p>약점만 집중 교정. 대회 준비·슬럼프 탈출까지.</p></div>
     </div>
     <div style="text-align:center; margin-top: 34px;">
@@ -187,21 +213,10 @@
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">Pricing</span>
-      <h2>이용 요금</h2>
-      <p>대대 이용은 10분당 2,200원. 레슨은 전화로 편하게 문의주세요.</p>
+      <h2>레슨 요금 안내</h2>
+      <p>1:1 개인 맞춤 레슨. 자세한 요금은 전화로 편하게 문의주세요.</p>
     </div>
-    <div class="price-grid">
-      <div class="price-card">
-        <h3>당구장 이용</h3>
-        <p class="desc">시비시디스 대대</p>
-        <div class="amount">2,200<small>원 / 10분</small></div>
-        <ul>
-          <li>대대 8대 · 대기 부담 적음</li>
-          <li>매일 새벽 5시까지</li>
-          <li>미아역 도보 3분 · 주차 가능</li>
-        </ul>
-        <a href="tel:01077581862" class="btn btn-green" style="width:100%; justify-content:center;">전화 문의</a>
-      </div>
+    <div class="price-grid" style="max-width:760px; margin:0 auto; grid-template-columns:repeat(2,1fr);">
       <div class="price-card featured">
         <span class="badge">인기</span>
         <h3>당구 레슨</h3>
@@ -226,16 +241,60 @@
         <a href="tel:01077581862" class="btn btn-green" style="width:100%; justify-content:center;">문의하기</a>
       </div>
     </div>
-    <p class="price-note">※ 레슨 요금은 실력·목표에 따라 달라집니다. 전화 주시면 안내드립니다. · <a href="pricing.html" style="color:var(--green); font-weight:700;">전체 요금표 보기</a></p>
+    <p class="price-note">※ 레슨 요금은 실력·목표에 따라 달라집니다. 전화 주시면 안내드립니다. · <a href="pricing.html" style="color:var(--mint); font-weight:700;">전체 요금표 보기</a></p>
   </div>
 </section>
 
-<!-- ===== CTA ===== -->
-<section class="wrap">
-  <div class="cta-band">
-    <h2>당구, 이번엔 진짜 늘려봅시다</h2>
-    <p>레슨 문의으로 내 실력을 진단받고 시작하세요.</p>
-    <a href="tel:01077581862" class="btn btn-gold"><i data-lucide="phone" class="ic-inline"></i> 010-7758-1862 전화하기</a>
+<!-- ===== 상담신청 폼 ===== -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Contact</span>
+      <h2>상담 신청</h2>
+      <p>이름·연락처·문의 내용을 남겨주시면 확인 후 빠르게 연락드립니다.</p>
+    </div>
+
+    <!-- ▼ FormSubmit: action의 이메일을 실제 받을 주소로 바꾸면 그 메일로 신청이 전송됩니다.
+         (첫 신청 1회는 FormSubmit이 보낸 확인메일의 링크를 눌러 활성화해야 함) -->
+    <form class="form-card contact-form" action="https://formsubmit.co/ansgud1862@gmail.com" method="POST">
+      <!-- 설정용 숨김 필드 -->
+      <input type="hidden" name="_subject" value="[미아 옵티머스24] 새 상담신청">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://heyjyu.github.io/billiards-lesson/index.html?sent=1#contact">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="form-row">
+        <label for="name">작성자 <span class="req">*</span></label>
+        <div class="form-field"><input id="name" name="작성자" type="text" placeholder="성함" required></div>
+      </div>
+
+      <div class="form-row">
+        <label>휴대폰 <span class="req">*</span></label>
+        <div class="form-field">
+          <div class="phone-inputs">
+            <input id="p1" type="tel" inputmode="numeric" maxlength="3" value="010">
+            <span>-</span>
+            <input id="p2" type="tel" inputmode="numeric" maxlength="4" placeholder="0000">
+            <span>-</span>
+            <input id="p3" type="tel" inputmode="numeric" maxlength="4" placeholder="0000">
+          </div>
+          <input type="hidden" id="phoneCombined" name="휴대폰">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="memo">메모 <span class="req">*</span></label>
+        <div class="form-field"><textarea id="memo" name="메모" placeholder="문의 내용을 적어주세요 (예: 3구 레슨 문의, 방문 희망 시간 등)" required></textarea></div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="form-submit"><i data-lucide="send" class="ic-inline"></i> 상담 신청하기</button>
+      </div>
+      <p class="form-note">남겨주신 정보는 상담 목적으로만 사용됩니다.</p>
+    </form>
+
+    <div class="form-ok" id="formOk">✓ 상담 신청이 접수되었습니다. 확인 후 연락드리겠습니다.</div>
   </div>
 </section>
 
@@ -268,6 +327,6 @@
 </footer>
 
 <a href="tel:01077581862" class="float-call"><i data-lucide="phone" class="ic-inline"></i> 전화 상담</a>
-<script src="https://unpkg.com/lucide@latest"></script> <script>lucide.createIcons();</script> <script src="js/main.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script> <script>lucide.createIcons();</script> <script src="js/main.js?v=2"></script>
 </body>
 </html>

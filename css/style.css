@@ -296,3 +296,50 @@ section { padding: 92px 0; position: relative; }
   .float-call { display: inline-flex; }
   section { padding: 64px 0; }
 }
+
+/* ---------- Contact form ---------- */
+.form-card {
+  max-width: 640px; margin: 0 auto; background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius-lg); padding: 40px 38px; position: relative; overflow: hidden;
+}
+.form-card::before {
+  content:""; position:absolute; top:0; left:0; right:0; height:3px;
+  background: linear-gradient(90deg, var(--emerald), var(--gold));
+}
+.form-row { display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: start; margin-bottom: 22px; }
+.form-row > label { padding-top: 12px; font-weight: 700; color: var(--text); font-size: 15.5px; }
+.form-row .req { color: var(--gold-2); margin-left: 2px; }
+.form-field input, .form-field textarea {
+  width: 100%; background: rgba(255,255,255,.04); border: 1px solid var(--line-2); border-radius: 10px;
+  padding: 12px 14px; color: var(--text); font-size: 15.5px; font-family: inherit; transition: border-color .2s, box-shadow .2s;
+}
+.form-field input::placeholder, .form-field textarea::placeholder { color: #5f6a72; }
+.form-field input:focus, .form-field textarea:focus {
+  outline: none; border-color: var(--emerald); box-shadow: 0 0 0 3px var(--emerald-glow);
+}
+.form-field textarea { min-height: 110px; resize: vertical; }
+.phone-inputs { display: flex; align-items: center; gap: 8px; }
+.phone-inputs input { text-align: center; }
+.phone-inputs span { color: var(--muted); font-weight: 700; }
+.form-actions { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 28px; }
+.form-submit {
+  width: 100%; padding: 15px; border: 0; border-radius: 12px; font-size: 16.5px; font-weight: 800; cursor: pointer;
+  background: var(--emerald); color: #08132a; box-shadow: 0 10px 26px var(--emerald-glow); transition: transform .14s var(--ease), box-shadow .25s, background .2s;
+}
+.form-submit:hover { background: #4179f0; transform: translateY(-2px); box-shadow: 0 16px 34px var(--emerald-glow); }
+.form-note { text-align:center; color: var(--muted); font-size: 13px; margin-top: 16px; }
+.form-ok { display:none; text-align:center; padding: 24px; color: var(--mint); font-weight: 700; font-size: 17px; }
+@media (max-width: 640px) {
+  .form-card { padding: 30px 22px; }
+  .form-row { grid-template-columns: 1fr; gap: 8px; margin-bottom: 18px; }
+  .form-row > label { padding-top: 0; }
+}
+
+/* ---------- Eyebrow balls + refined lesson numbers ---------- */
+.eyebrow-balls { vertical-align: -3px; margin-right: 3px; filter: drop-shadow(0 1px 2px rgba(0,0,0,.45)); }
+.lesson-row .num {
+  font-size: 46px; font-weight: 700; font-family: Georgia, "Times New Roman", serif;
+  background: linear-gradient(160deg, #f6d98f 10%, #d3a544 55%, #b07f27 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  -webkit-text-stroke: 0; letter-spacing: 0; line-height: 1; font-style: italic;
+}
