@@ -34,7 +34,7 @@ robots.txt      크롤러 허용 규칙
    git push -u origin main
    ```
 3. 저장소 → Settings → Pages → Source: `main` / `/ (root)` 저장
-4. 몇 분 뒤 `https://heyjyu.github.io/billiards-lesson/` 접속 확인
+4. 몇 분 뒤 `https://billiards-lesson.github.io/` 접속 확인
 
 > 저장소 이름을 `heyjyu.github.io`로 만들면 주소가 `https://heyjyu.github.io/` 로 더 짧아짐 (이 경우 sitemap/canonical의 `/billiards-lesson/` 경로 제거).
 
@@ -61,6 +61,6 @@ robots.txt      크롤러 허용 규칙
 
 ## 4. 무료 도메인?
 `README` 하단 참고 — 실질적으로 완전 무료의 좋은 도메인은 거의 없음.
-- **가장 현실적(무료):** `heyjyu.github.io/billiards-lesson` 그대로 쓰기. 검색 노출엔 문제없음.
+- **가장 현실적(무료):** `billiards-lesson.github.io` 그대로 쓰기. 검색 노출엔 문제없음.
 - **저렴한 유료(추천):** `.com`/`.co.kr`/`.kr` 도메인을 가비아·후이즈·Cloudflare Registrar 등에서 연 1~2만원대 구매 → GitHub Pages Settings → Pages → Custom domain에 입력 + 저장소에 `CNAME` 파일 추가.
 - 예전 무료 도메인(Freenom .tk/.ml 등)은 현재 발급 중단/불안정이라 비추천.

@@ -7,4 +7,4 @@ User-agent: Yeti
 Allow: /
 Disallow: /og.html
 
-Sitemap: https://heyjyu.github.io/billiards-lesson/sitemap.xml
+Sitemap: https://billiards-lesson.github.io/sitemap.xml
