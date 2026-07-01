@@ -32,23 +32,25 @@
     });
   });
 
+  // 상담 신청하기 → 문자앱 자동 채움 (받는번호 010-7758-1862, 손님은 전송만)
+  var OWNER = '01077581862';
   form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = (document.getElementById('name').value || '').trim();
     var a = (p1.value || '').trim(), b = (p2.value || '').trim(), c = (p3.value || '').trim();
-    if (b.length < 3 || c.length < 4) {
-      e.preventDefault();
-      alert('휴대폰 번호를 정확히 입력해 주세요.');
-      p2.focus();
-      return;
-    }
-    combined.value = a + '-' + b + '-' + c;
-  });
-})();
+    var memo = (document.getElementById('memo').value || '').trim();
+    if (!name) { alert('성함을 입력해 주세요.'); return; }
+    if (b.length < 3 || c.length < 4) { alert('휴대폰 번호를 정확히 입력해 주세요.'); p2.focus(); return; }
+    if (!memo) { alert('문의 내용을 입력해 주세요.'); return; }
 
-// 접수 완료 메시지 (FormSubmit 전송 후 ?sent=1 로 돌아옴)
-(function () {
-  if (location.search.indexOf('sent=1') === -1) return;
-  var form = document.querySelector('.contact-form');
-  var ok = document.getElementById('formOk');
-  if (form) form.style.display = 'none';
-  if (ok) ok.style.display = 'block';
+    var phone = a + '-' + b + '-' + c;
+    if (combined) combined.value = phone;
+    var body = '[상담신청]\n작성자: ' + name + '\n연락처: ' + phone + '\n문의: ' + memo;
+    // sms:번호?&body= → iOS·안드로이드 공통 호환
+    window.location.href = 'sms:' + OWNER + '?&body=' + encodeURIComponent(body);
+
+    // 문자앱 열린 뒤 안내 메시지 표시
+    var ok = document.getElementById('formOk');
+    if (ok) { form.style.display = 'none'; ok.style.display = 'block'; }
+  });
 })();
