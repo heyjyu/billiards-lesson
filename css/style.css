@@ -365,3 +365,7 @@ body { line-height: 1.7; }
 @media (max-width: 900px) {
   .hero p.lead { font-size: 17px; line-height: 1.72; }
 }
+
+/* 히어로 제목 줄간격 여유 */
+.hero h1 { line-height: 1.24; }
+@media (max-width: 900px) { .hero h1 { line-height: 1.28; } }
